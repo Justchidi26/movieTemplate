@@ -2,22 +2,114 @@
 
 body {
   margin: 0;
-  color: #fff;
+  color: #EAEAEA;
   font-family: 'Open Sans', sans-serif;
   text-align: center;
   overflow-x: hidden;
-  background-image: url('assets/confetti-doodles.svg');
-  background-size: cover; /* Or use other background properties */
+  background-image: url('assets/endless-constellation.svg');
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-/* .element {
-  background-image: url('/path/to/your/image.svg');
-  background-size: cover; 
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* body {
+  font-family: "Poppins", sans-serif;
+  background-image: url('assets/endless-constellation.svg');
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-attachment: fixed;
+  text-align: center;
+  margin: 0;
+  padding: 40px 20px;
+  color: #EAEAEA;
 } */
+
+.container-1 h1 {
+  color: #F0E6D2;
+  margin-bottom: 30px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.card {
+  width: 150px;
+  height: 150px;
+  perspective: 1000px;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  padding: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.card-front {
+  background: #1f1f2e;
+  color: #EAEAEA;
+  font-weight: 600;
+  border: 1px solid #3a3a5c;
+}
+
+.card-back {
+  background: #2a2a3d;
+  color: #D4AF37;
+  transform: rotateY(180deg);
+  border: 1px solid #3a3a5c;
+}
+
+.container-1 button {
+  margin-top: 30px;
+  padding: 12px 25px;
+  font-size: 1rem;
+  background-color: #C5A572;
+  color: #1a1a1a;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.container-1 button:hover {
+  background-color: #E5C07B;
+  transform: scale(1.05);
+}
+
+
+
 
 
 .hero {
@@ -27,60 +119,54 @@ body {
 .hero h1 {
   font-family: 'Cinzel', serif;
   font-size: 3rem;
-  color: gold;
+  color: #F0E6D2;
   letter-spacing: 2px;
 }
 
 .hero span {
-  color: #ffcc00;
+  color: #D4AF37;
 }
 
 .tagline {
   margin-top: 10px;
   font-size: 1.2rem;
+  color: #B0C4DE;
   opacity: 0.9;
 }
 
 button {
   margin-top: 20px;
-  background-color: gold;
+  background-color: #C5A572; 
   border: none;
   padding: 12px 25px;
   border-radius: 8px;
   font-size: 1rem;
+  color: #1A1A1A;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 button:hover {
-  background-color: #ffcc33;
+  background-color: #E5C07B;
   transform: scale(1.05);
-}
-
-.trailer {
-  display: none;
-  padding: 50px 20px;
 }
 
 video {
   width: 90%;
   max-width: 600px;
-  border: 3px solid gold;
+  border: 3px solid #D4AF37;
   border-radius: 12px;
-}
-
-.reviews, .credits {
-  padding: 60px 20px;
 }
 
 .review-list p {
   font-style: italic;
   margin: 15px 0;
   font-size: 1.1rem;
+  color: #EAEAEA;
   opacity: 0.9;
 }
 
 .credits h2 {
-  color: gold;
+  color: #DCC48E;
   margin-bottom: 20px;
 }
