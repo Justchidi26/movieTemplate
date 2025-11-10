@@ -2,16 +2,26 @@
 
 body {
   margin: 0;
-  background-color: #0d0d0d;
   color: #fff;
   font-family: 'Open Sans', sans-serif;
   text-align: center;
   overflow-x: hidden;
+  background-image: url('assets/confetti-doodles.svg');
+  background-size: cover; /* Or use other background properties */
+  background-repeat: no-repeat;
+  background-position: center;
 }
+
+/* .element {
+  background-image: url('/path/to/your/image.svg');
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-position: center;
+} */
+
 
 .hero {
   padding: 100px 20px;
-  background: linear-gradient(to bottom, #111, #000);
 }
 
 .hero h1 {
@@ -50,7 +60,6 @@ button:hover {
 .trailer {
   display: none;
   padding: 50px 20px;
-  background-color: #111;
 }
 
 video {
@@ -62,7 +71,6 @@ video {
 
 .reviews, .credits {
   padding: 60px 20px;
-  background-color: #0f0f0f;
 }
 
 .review-list p {
