@@ -1,80 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>The Amazing Life of [His Name]</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <div class="container-1">
-    <h1>💖 Reasons Why I Love You 💖</h1>
-    <div class="gallery">
-      <!-- Repeat cards as needed -->
-      <div class="card">
-        <div class="card-inner">
-          <div class="card-front">1</div>
-          <div class="card-back">You make me laugh every day 😄</div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-inner">
-          <div class="card-front">2</div>
-          <div class="card-back">You always support my dreams 🌟</div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-inner">
-          <div class="card-front">3</div>
-          <div class="card-back">You give the best hugs 🤗</div>
-        </div>
-      </div>
-      <!-- Add more cards here -->
-    </div>
-
-    <button id="surpriseBtn">Show Final Reason 💝</button>
-  </div>
-
-
-  <div class="container">
-    <!-- Hero / Title Section -->
-    <section class="hero">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Amazing Life of [His Name] 🎬</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Hero Section -->
+    <!-- <header class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
       <h1>The Amazing Life of <span>[His Name]</span></h1>
-      <p class="tagline">A story of love, laughter, and unforgettable moments ❤️</p>
-      <button id="playTrailerBtn">▶ Watch the Trailer</button>
+      <p class="tagline">A story of laughter, love, and endless memories 💖</p>
+      <button class="btn" onclick="scrollToSection('trailer')">Watch Trailer</button>
+    </div>
+  </header> -->
+
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1>The Amazing Life of <span>[His Name]</span></h1>
+        <p class="tagline">
+          A story of love, laughter, and unforgettable moments ❤️
+        </p>
+        <button class="btn" onclick="scrollToSection('trailer')">
+          Watch Trailer
+        </button>
+      </div>
     </section>
 
     <!-- Trailer Section -->
-    <section class="trailer" id="trailerSection">
-      <video controls>
+    <section id="trailer" class="trailer">
+      <h2>Official Birthday Trailer 🎥</h2>
+      <video controls poster="assets/hero.jpg">
         <source src="assets/trailer.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
+        Your browser does not support video playback.
       </video>
     </section>
 
-    <!-- Reviews Section -->
-    <section class="reviews">
-      <h2>Critics Say 🎬</h2>
-      <div class="review-list">
-        <p>🌟 “100% Perfect Boyfriend” – Rotten Tomatoes</p>
-        <p>💖 “An unforgettable romantic masterpiece” – IMDb</p>
-        <p>😂 “Funny, charming, and irresistibly lovable” – The Daily Me</p>
+    <!-- Highlights Section -->
+    <section class="highlights">
+      <h2>Our Favorite Moments</h2>
+      <div class="card-container">
+        <div class="card">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="assets/moment1.jpg" alt="Moment 1" />
+              <h3>Our First Date</h3>
+            </div>
+            <div class="card-back">
+              <p>The beginning of everything beautiful 💞</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="assets/moment2.jpg" alt="Moment 2" />
+              <h3>That Road Trip</h3>
+            </div>
+            <div class="card-back">
+              <p>Just us, good music, and endless laughter 🚗💨</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="assets/moment3.jpg" alt="Moment 3" />
+              <h3>Inside Jokes</h3>
+            </div>
+            <div class="card-back">
+              <p>When no one else understands but we’re dying of laughter 😂</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="assets/moment4.jpg" alt="Moment 4" />
+              <h3>Lazy Sundays</h3>
+            </div>
+            <div class="card-back">
+              <p>Movies, snacks, and cuddles — pure happiness 🍿</p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- Credits Section -->
     <section class="credits">
       <h2>Credits</h2>
-      <p>Directed by: Fate</p>
-      <p>Produced by: <span>Me ❤️</span></p>
-      <p>Starring: <strong>[His Name]</strong></p>
-      <p>Music by: “Your Favorite Song”</p>
+      <ul>
+        <li>Directed by: Me ❤️</li>
+        <li>Starring: [His Name] as My Favorite Person</li>
+        <li>Produced by: Love, Patience & Endless Care</li>
+        <li>Music by: Our Shared Playlist 🎶</li>
+      </ul>
     </section>
 
-    <audio id="bgMusic" src="assets/background-music.mp3" loop></audio>
-  </div>
-  <!-- <div class="overlay-image"></div> -->
+    <!-- Reviews Section -->
+    <section class="reviews">
+      <h2>Critics’ Reviews</h2>
+      <div class="reviews-list">
+        <p>“100% perfect boyfriend – Rotten Tomatoes 🍅”</p>
+        <p>“A timeless love story – IMDb ⭐ 10/10”</p>
+        <p>“Heartfelt and unforgettable – Love Magazine 💌”</p>
+      </div>
+    </section>
 
-  <script src="script.js"></script>
-</body>
+    <!-- Ending Popup -->
+    <div id="popup" class="popup hidden">
+      <div class="popup-content">
+        <h2>And the story continues…</h2>
+        <p>Happy Birthday, my love 🎂💫</p>
+        <button class="btn" onclick="closePopup()">❤️ Love You ❤️</button>
+      </div>
+    </div>
+
+    <footer>
+      <p>Made with ❤️ by [Your Name]</p>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
 </html>

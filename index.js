@@ -1,12 +1,14 @@
-const playBtn = document.getElementById("playTrailerBtn");
-const trailerSection = document.getElementById("trailerSection");
-const bgMusic = document.getElementById("bgMusic");
+function scrollToSection(id) {
+  document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+}
 
-playBtn.addEventListener("click", () => {
-  trailerSection.style.display = "block";
-  bgMusic.play();
-  window.scrollTo({
-    top: trailerSection.offsetTop,
-    behavior: "smooth",
-  });
+// Show popup automatically after few seconds
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    document.getElementById('popup').classList.remove('hidden');
+  }, 8000);
 });
+
+function closePopup() {
+  document.getElementById('popup').classList.add('hidden');
+}
