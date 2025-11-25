@@ -59,7 +59,7 @@ body {
 .hero {
   position: relative;
   height: 100vh;
-  background: url("assets/hero-bg.jpg") center/cover no-repeat;
+  background: url("assets/hero.jpeg") center/cover no-repeat;  /* your uploaded image */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -68,22 +68,25 @@ body {
   overflow: hidden;
 }
 
-/* This creates the fade effect */
+/* Cinematic fade effect */
 .hero-overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+
   background: linear-gradient(
-    rgba(0, 0, 0, 0.2) 0%,
-    rgba(0, 0, 0, 0.6) 50%,
-    #0a0a1a 100%
+    rgba(0, 0, 0, 0.15) 0%,     /* slightly visible top */
+    rgba(0, 0, 0, 0.55) 40%,    /* soft dark in middle */
+    rgba(10, 10, 26, 0.95) 100% /* blends perfectly to site background */
   );
+
+  backdrop-filter: brightness(0.95);
   z-index: 1;
 }
 
-/* Keep text above overlay */
+/* Keeps text above overlay */
 .hero-content {
   position: relative;
   z-index: 2;
@@ -117,6 +120,7 @@ body {
   transition: 0.3s;
   margin-top: 20px;
 }
+
 
 .btn:hover {
   background: #ff1e3c;
